@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Distance to Care</title>
+<style>
+* { box-sizing:border-box; margin:0; padding:0; }
+body { background:#1a1a2e; font-family:Arial,sans-serif; color:#ffffff; padding:48px 40px; }
+.header { margin-bottom:52px; }
+.title { font-size:32px; font-weight:700; }
+.title span { color:#e94560; }
+.subtitle { color:#8888aa; font-size:13px; margin-top:8px; letter-spacing:0.04em; }
+.kpi-row { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-bottom:52px; }
+.kpi { background:#0d0d1f; border-radius:12px; padding:24px; border-top:3px solid #00b4d8; }
+.kpi-label { font-size:10px; color:#8888aa; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:8px; }
+.kpi-value { font-size:28px; font-weight:700; }
+.kpi-sub { font-size:12px; color:#8888aa; margin-top:6px; }
+.section-title { font-size:11px; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:#8888aa; margin-bottom:20px; border-bottom:1px solid #2a2a4a; padding-bottom:10px; }
+.cards { display:flex; gap:14px; flex-wrap:wrap; margin-bottom:52px; }
+.card { background:#0d0d1f; border-radius:10px; padding:18px 16px; width:210px; }
+.verdict { font-size:9px; font-weight:700; letter-spacing:0.1em; margin-bottom:10px; }
+.name { font-size:14px; font-weight:700; margin-bottom:4px; line-height:1.3; }
+.location { font-size:10px; color:#8888aa; margin-bottom:14px; }
+.metrics { display:flex; justify-content:space-between; }
+.metric { text-align:center; flex:1; }
+.val { font-size:13px; font-weight:700; }
+.lbl { font-size:7px; color:#8888aa; letter-spacing:0.06em; margin-top:3px; }
+</style>
+</head>
+<body>
+<div class="header">
+  <div class="title">Distance to <span>Care</span></div>
+  <div class="subtitle">NHS ENGLAND GP PATIENT BURDEN ANALYSIS · APRIL 2025 · 6,127 PRACTICES · 63.7M PATIENTS</div>
+</div>
+<div class="kpi-row">
+  <div class="kpi"><div class="kpi-label">National Average</div><div class="kpi-value">10,304</div><div class="kpi-sub">patients per practice</div></div>
+  <div class="kpi" style="border-top-color:#e94560;"><div class="kpi-label">Most Burdened Region</div><div class="kpi-value">South East</div><div class="kpi-sub">12,664 avg patients per practice</div></div>
+  <div class="kpi" style="border-top-color:#f5a623;"><div class="kpi-label">Critical Practices</div><div class="kpi-value">583</div><div class="kpi-sub">serving 175% above national average</div></div>
+</div>
+<div class="section-title">Most Overloaded Practices</div>
+<div class="cards">
+<div class="card" style="border-top: 3px solid #e94560;">
+  <div class="verdict" style="color:#e94560;">CRITICAL</div>
+  <div class="name">Gp At Hand</div>
+  <div class="location">London · London</div>
+  <div class="metrics">
+    <div class="metric"><div class="val">100,329</div><div class="lbl">PATIENTS</div></div>
+    <div class="metric"><div class="val">974</div><div class="lbl">PBI SCORE</div></div>
+    <div class="metric"><div class="val" style="color:#e94560;">874%</div><div class="lbl">ABOVE AVG</div></div>
+  </div>
+</div>
+<div class="card" style="border-top: 3px solid #e94560;">
+  <div class="verdict" style="color:#e94560;">CRITICAL</div>
+  <div class="name">Medicus Health Partners</div>
+  <div class="location">London · London</div>
+  <div class="metrics">
+    <div class="metric"><div class="val">93,770</div><div class="lbl">PATIENTS</div></div>
+    <div class="metric"><div class="val">910</div><div class="lbl">PBI SCORE</div></div>
+    <div class="metric"><div class="val" style="color:#e94560;">810%</div><div class="lbl">ABOVE AVG</div></div>
+  </div>
+</div>
+<div class="card" style="border-top: 3px solid #e94560;">
+  <div class="verdict" style="color:#e94560;">CRITICAL</div>
+  <div class="name">Gp Pathfinder Clinics</div>
+  <div class="location">Wembley · London</div>
+  <div class="metrics">
+    <div class="metric"><div class="val">89,035</div><div class="lbl">PATIENTS</div></div>
+    <div class="metric"><div class="val">864</div><div class="lbl">PBI SCORE</div></div>
+    <div class="metric"><div class="val" style="color:#e94560;">764%</div><div class="lbl">ABOVE AVG</div></div>
+  </div>
+</div>
+<div class="card" style="border-top: 3px solid #e94560;">
+  <div class="verdict" style="color:#e94560;">CRITICAL</div>
+  <div class="name">Modality Partnership (Awc)</div>
+  <div class="location">Keighley · North East and Yorkshire</div>
+  <div class="metrics">
+    <div class="metric"><div class="val">86,592</div><div class="lbl">PATIENTS</div></div>
+    <div class="metric"><div class="val">840</div><div class="lbl">PBI SCORE</div></div>
+    <div class="metric"><div class="val" style="color:#e94560;">740%</div><div class="lbl">ABOVE AVG</div></div>
+  </div>
+</div>
+<div class="card" style="border-top: 3px solid #e94560;">
+  <div class="verdict" style="color:#e94560;">CRITICAL</div>
+  <div class="name">Nexus Health Group</div>
+  <div class="location">London · London</div>
+  <div class="metrics">
+    <div class="metric"><div class="val">75,271</div><div class="lbl">PATIENTS</div></div>
+    <div class="metric"><div class="val">730</div><div class="lbl">PBI SCORE</div></div>
+    <div class="metric"><div class="val" style="color:#e94560;">630%</div><div class="lbl">ABOVE AVG</div></div>
+  </div>
+</div></div>
+<div class="section-title">Lowest Burden Practices</div>
+<div class="cards">
+<div class="card" style="border-top: 3px solid #00b4d8;">
+  <div class="verdict" style="color:#00b4d8;">LOW BURDEN</div>
+  <div class="name">Sas Mid And South Essex Stp</div>
+  <div class="location">Southend-On-Sea · East of England</div>
+  <div class="metrics">
+    <div class="metric"><div class="val">1,036</div><div class="lbl">PATIENTS</div></div>
+    <div class="metric"><div class="val">10</div><div class="lbl">PBI SCORE</div></div>
+    <div class="metric"><div class="val" style="color:#00b4d8;">90%</div><div class="lbl">BELOW AVG</div></div>
+  </div>
+</div>
+<div class="card" style="border-top: 3px solid #00b4d8;">
+  <div class="verdict" style="color:#00b4d8;">LOW BURDEN</div>
+  <div class="name">Rainbow Health Centre</div>
+  <div class="location">Croydon · London</div>
+  <div class="metrics">
+    <div class="metric"><div class="val">1,120</div><div class="lbl">PATIENTS</div></div>
+    <div class="metric"><div class="val">11</div><div class="lbl">PBI SCORE</div></div>
+    <div class="metric"><div class="val" style="color:#00b4d8;">89%</div><div class="lbl">BELOW AVG</div></div>
+  </div>
+</div>
+<div class="card" style="border-top: 3px solid #00b4d8;">
+  <div class="verdict" style="color:#00b4d8;">LOW BURDEN</div>
+  <div class="name">Health E1</div>
+  <div class="location">London · London</div>
+  <div class="metrics">
+    <div class="metric"><div class="val">1,132</div><div class="lbl">PATIENTS</div></div>
+    <div class="metric"><div class="val">11</div><div class="lbl">PBI SCORE</div></div>
+    <div class="metric"><div class="val" style="color:#00b4d8;">89%</div><div class="lbl">BELOW AVG</div></div>
+  </div>
+</div>
+<div class="card" style="border-top: 3px solid #00b4d8;">
+  <div class="verdict" style="color:#00b4d8;">LOW BURDEN</div>
+  <div class="name">The Medical Centre Dr Okorie</div>
+  <div class="location">Sheffield · North East and Yorkshire</div>
+  <div class="metrics">
+    <div class="metric"><div class="val">1,171</div><div class="lbl">PATIENTS</div></div>
+    <div class="metric"><div class="val">11</div><div class="lbl">PBI SCORE</div></div>
+    <div class="metric"><div class="val" style="color:#00b4d8;">89%</div><div class="lbl">BELOW AVG</div></div>
+  </div>
+</div>
+<div class="card" style="border-top: 3px solid #00b4d8;">
+  <div class="verdict" style="color:#00b4d8;">LOW BURDEN</div>
+  <div class="name">Homeless Health Exchange</div>
+  <div class="location">Birmingham · Midlands</div>
+  <div class="metrics">
+    <div class="metric"><div class="val">1,172</div><div class="lbl">PATIENTS</div></div>
+    <div class="metric"><div class="val">11</div><div class="lbl">PBI SCORE</div></div>
+    <div class="metric"><div class="val" style="color:#00b4d8;">89%</div><div class="lbl">BELOW AVG</div></div>
+  </div>
+</div></div>
+</body>
+</html>
